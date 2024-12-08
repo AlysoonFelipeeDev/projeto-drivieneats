@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driven Eats</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <header>
+            <h1>DrivenEats</h1>
+            <p>sua comida em 6 minutos</p>
+        </header>
+        <div class="container" >
+            <div class="conteudo">
+                <h2>Primeiro, seu prato</h2>
+                <div class="escolher-prato">
+                    <div class="pratos frango" onclick="selecionarPrato('frango')">
+                        <img src="projeto__driven-eats__imagens/pf_frango.jpg" alt="">
+                        <p class="nome-comida">Frango Yin Yang</p>
+                        <p class="tipo-comida">Um pouco de batata,<br>um pouco de salada</p>
+                        <p class="preco-comida">14.90</p>
+                    </div>
+                    <div class="pratos calabresa" onclick="selecionarPrato('calabresa')">
+                        <img src="projeto__driven-eats__imagens/pf_calabresa.png" alt="">
+                        <p class="nome-comida">Calabresa acebolada</p>
+                        <p class="tipo-comida">Acompanha arroz,<br> feijão e salada</p>
+                        <p class="preco-comida">16.90</p>
+                    </div>
+                    <div class="pratos carne" onclick="selecionarPrato('carne')">
+                        <img src="projeto__driven-eats__imagens/pf_carne.jpg" alt="">
+                        <p class="nome-comida">Carne e ovo</p>
+                        <p class="tipo-comida">Acompanha arroz,<br> feijão e salada</p>
+                        <p class="preco-comida">17.90</p>
+                    </div>
+                </div>
+                <h2>Agora, sua bebida</h2>
+                <div class="escolher-bebida">
+                    <div class="pratos coca" onclick="selecionarBebida('coca')">
+                        <img src="projeto__driven-eats__imagens/coca.png" alt="">
+                        <p class="nome-comida">Coca-Cola</p>
+                        <p class="tipo-comida">Lata 350ml</p>
+                        <p class="preco-comida">6.90</p>
+                    </div>
+                    <div class="pratos fanta" onclick="selecionarBebida('fanta')">
+                        <img src="projeto__driven-eats__imagens/fanta.png" alt="">
+                        <p class="nome-comida">Fanta Laranja</p>
+                        <p class="tipo-comida">Lata 350ml</p>
+                        <p class="preco-comida">4.90</p>
+                    </div>
+                    <div class="pratos suco" onclick="selecionarBebida('suco')">
+                        <img src="projeto__driven-eats__imagens/suco.png" alt="">
+                        <p class="nome-comida">Suco natural</p>
+                        <p class="tipo-comida">Suco 500ml</p>
+                        <p class="preco-comida">5.90</p>
+                    </div>
+                </div>
+                <h2>Por fim, sua sobremesa</h2>
+                <div class="escolher-sobremesa">
+                    <div class="pratos pudim" onclick="selecionarSobremesa('pudim')">
+                        <img src="projeto__driven-eats__imagens/pudim.jpg" alt="">
+                        <p class="nome-comida">Pudim</p>
+                        <p class="tipo-comida">Banho maria</p>
+                        <p class="preco-comida">7.90</p>
+                    </div>
+                    <div class="pratos mouse" onclick="selecionarSobremesa('mouse')">
+                        <img src="projeto__driven-eats__imagens/mouse.jpg" alt="">
+                        <p class="nome-comida">Mouse</p>
+                        <p class="tipo-comida">Sabor de maracujá</p>
+                        <p class="preco-comida">8.90</p>
+                    </div>
+                    <div class="pratos brownie" onclick="selecionarSobremesa('brownie')">
+                        <img src="projeto__driven-eats__imagens/brownie.jpg" alt="">
+                        <p class="nome-comida">Brownie</p>
+                        <p class="tipo-comida">Chocolate</p>
+                        <p class="preco-comida">3.90</p>
+                    </div>
+                </div>
+            </div>
+            <div class="todos-selecionados">
+                <div class="finalizar-pedido" >
+                    <buttom class="fechar-pedido" onclick="fecharPedido()">Selecione os 3 itens <br> para fechar o pedido</buttom>
+                </div>
+            </div>
+        </div>
+        
+        <div class="overlay">
+            <div class="loading-overlay escondido">
+                <div class="container">
+                    <h2>Confirme seu pedido</h2> <br>
+                    <div class="pedido-feito"></div>
+                    <a href="">Tudo certo, pode pedir!</a> <br><br><br>
+                    <div><button onclick="cancelar()">Cancelar</button></div>
+                </div>
+            </div>
+        </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
